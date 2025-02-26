@@ -1,0 +1,113 @@
+/* Contenedor de las tarjetas */
+.productsCardsTotal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 20px;
+
+}
+
+
+/* Estilo para cada tarjeta */
+.product-card {
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 280px; /* Tamaño máximo de las tarjetas */
+  width: 100%;
+}
+
+/* Imagen del producto */
+.product-img {
+  width: 100%;
+  height: 100%; /* Ajustable según tus necesidades */
+  object-fit: cover; /* Para mantener la imagen proporcional */
+}
+
+/* Detalles del producto */
+.product-details {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.product-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+
+  color: #1D3557;
+}
+
+.product-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.product-details strong {
+  font-weight: bold;
+}
+
+/* Efecto hover */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+}
+a{
+text-decoration: none;}
+
+
+
+.filtro{
+  display: flex;
+
+  margin-top: 100px;
+  flex-direction: column;
+}
+/* Etiqueta de promoción */
+.promo-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #1D3557;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegurar que el .product-card sea position relative para que la etiqueta se posicione bien */
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.promocionesCard{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.descuentosCard{
+  display: flex;
+  flex-direction: column;
+}
+h2{
+  margin-top: 100px;
+  text-align: center;
+  border-bottom: #1D3557;
+}
+img{
+  border-radius: 4px;
+}

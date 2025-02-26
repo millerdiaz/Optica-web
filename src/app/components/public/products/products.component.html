@@ -1,0 +1,28 @@
+
+<div class="productsCardsTotal">
+
+@for (item of products; track $index) {
+
+
+
+  <div class="productsCards">
+      <div class="product-card">
+        <a [routerLink]="['/descripcion', item._id]">
+          <img src="{{ item.img }}" alt="Imagen del producto" class="product-img" />
+          <div class="product-details">
+            <h3>{{ item.marca }}</h3>
+            <p><strong>Modelo:</strong> {{ item.modelo }}</p>
+            <p><strong>Descripción:</strong> {{ item.descripcion }}</p>
+            <p><strong>Precio:</strong> ${{ item.precio }}</p>
+            <p><strong>Género:</strong> {{ item.genero }}</p>
+          </div>
+        </a>
+        <!-- <button (click)="addToCart()">Añadir al carrito</button> -->
+
+      </div>
+    </div>
+
+
+
+}
+

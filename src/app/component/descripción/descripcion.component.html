@@ -1,0 +1,74 @@
+<div class="body">
+  <div ngIf="product" class="producto">
+    <div class="imagenProducto">
+      <img [src]="product.img" alt="logo empresa">
+      <div class="logos">
+        <div>
+          <i class="bi bi-tools"></i>
+          <p>Limpieza y ajuste gratis en todas nuestras tiendas.</p>
+        </div>
+        <div>
+          <i class="bi bi-shield-fill-plus"></i>
+          <p>Garantía oftálmica y garantía estética</p>
+        </div>
+        <div>
+          <i class="bi bi-truck"></i>
+          <p>Envio Gratis</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="caracteristicas">
+      <h2>Características</h2>
+      <p>Marca: {{ product.marca }}</p>
+      <h5 class="card-title">Modelo: {{ product.modelo }}</h5>
+      <p class="card-text">Descripción: {{ product.descripcion }}</p>
+      <p class="card-text">Precio: ${{ product.precio }}</p>
+
+      <div class="descripcion">
+        @if (product.marca === "RayBan") {
+          <img src="rayBan.png" alt="logo empresa" width="100px">
+          <p>Nacido en 1937 por necesidad, Ray-Ban ha estado a la vanguardia en el desarrollo de anteojos de sol de alta calidad para proteger a los pilotos de los fuertes rayos del sol. Desde entonces, Ray-Ban ha sido la marca elegida por los visionarios y creadores culturales de todo el mundo para expresar su propia identidad de una manera más auténtica y atrevida</p>
+        }
+        @if (product.marca === "Vogue") {
+          <img src="vogue.png" alt="logo empresa" width="100px">
+          <p>Vogue es sinónimo de sofisticación y estilo. Desde su fundación, la marca ha creado gafas que combinan elegancia con modernidad, convirtiéndose en un referente para quienes buscan un look distinguido y contemporáneo.</p>
+        }
+        @if (product.marca === "Emporio Armani"||product.marca === "Armani Exchangue"||product.marca === "Armani exchange") {
+          <img src="armani.png" alt="logo empresa" width="100px">
+          <p>Armani es un ícono mundial de lujo, reconocido por su estilo clásico y atemporal. Sus gafas reflejan el diseño italiano de alta costura, siempre con una mezcla de elegancia y vanguardia.</p>
+
+        }
+
+        @if (product.marca === "Polaroid") {
+          <img src="polaroid.png" alt="logo empresa" width="100px">
+          <p>Polaroid es conocida por su tecnología de lentes polarizados que eliminan los deslumbramientos, ofreciendo una visión clara y nítida. Perfecta para los amantes del aire libre y la fotografía.</p>
+
+        }
+        @if (product.marca === "Oakley") {
+          <img src="oakley.png" alt="logo empresa" width="100px">
+          <p>Oakley es una marca líder en el diseño de gafas deportivas y de rendimiento. Con tecnología innovadora, sus productos ofrecen protección y comodidad para los deportistas más exigentes.</p>
+
+        }
+
+        @if (product.marca === "Puma") {
+          <img src="puma.png" alt="logo empresa" width="100px">
+          <p>Puma combina la moda con la funcionalidad, ofreciendo gafas que reflejan su espíritu deportivo y juvenil. Ideal para quienes buscan estilo y comodidad en su día a día.</p>
+
+        }
+
+        @if (product.marca === "Miraflex") {
+          <img src="miraflex.png" alt="logo empresa" width="100px">
+          <p>Miraflex es una marca especializada en gafas para niños, combinando seguridad, comodidad y estilo. Sus diseños flexibles y resistentes están hechos para adaptarse a las necesidades de los más pequeños.</p>
+
+        }
+        @if (product.marca === "Seen") {
+          <img src="seen.png" alt="logo empresa" width="100px">
+          <p>Seen es una marca moderna que se centra en gafas de diseño único y audaz. Con una variedad de estilos, Seen es perfecta para quienes desean destacarse y expresar su personalidad a través de sus accesorios.</p>
+
+        }
+        <button  (click)="addToCart()">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>

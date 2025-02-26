@@ -1,0 +1,177 @@
+/* Marcas */
+.marcas {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que las imágenes se acomoden cuando la pantalla se reduzca */
+}
+
+.marcas img {
+  width: 100px;
+  margin: 0 10px; /* Espacio entre imágenes */
+}
+
+.vogue {
+  width: 100px;
+  padding-top: 35px;
+}
+
+.marcas img:hover {
+  cursor: pointer;
+}
+
+/* Accesos Directos */
+.accesosDirectos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+}
+
+.accesosDirectos div {
+  position: relative;
+  overflow: hidden;
+  width: 50%; /* Ajusta el ancho de las tarjetas para pantallas grandes */
+  height: 500px;
+}
+
+.accesosDirectos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 9s ease;
+  transform-origin: center center;
+}
+
+.accesosDirectos div:hover img {
+  transform: scale(1.1);
+}
+
+.ver {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #1D3557;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.ver:hover {
+  background-color: white;
+}
+
+.verCategoria {
+  text-decoration: none;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.verCategoria:hover {
+  color: #CCE3DE;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: slide 20s infinite;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.textoImagen {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #1D3557;
+  font-weight: lighter;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  29.41% { transform: translateX(0); }
+  33.33% { transform: translateX(-1346px); }
+  62.74% { transform: translateX(-1346px); }
+  66.66% { transform: translateX(-2695px); }
+  96.08% { transform: translateX(-2695px); }
+  100% { transform: translateX(0); }
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+/* Para pantallas más pequeñas que 768px */
+@media (max-width: 768px) {
+  .marcas {
+    justify-content: space-evenly;
+  }
+
+  .marcas img {
+    width: 80px; /* Reducir tamaño de las imágenes */
+  }
+
+  .accesosDirectos div {
+    width: 100%; /* Hacer que cada tarjeta ocupe todo el ancho de la pantalla */
+    height: 300px; /* Ajustar la altura para pantallas más pequeñas */
+  }
+
+  .carousel-track {
+    flex-direction: column;
+  }
+
+  .carousel-track img {
+    width: 100%;
+    height: auto; /* Ajusta la altura del carrusel */
+  }
+
+  .carousel {
+    display: none;
+  }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .marcas {
+    justify-content: center;
+  }
+
+  .marcas img {
+    width: 60px; /* Reducción aún mayor del tamaño de las imágenes */
+  }
+
+  .accesosDirectos div {
+    width: 100%; /* Las tarjetas ocupan el 100% del ancho */
+    height: 250px; /* Ajustar la altura para móviles */
+  }
+
+  .carousel {
+    display: none;
+  }
+}

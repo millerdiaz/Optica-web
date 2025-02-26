@@ -1,0 +1,78 @@
+.imgojos{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contenido{
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.pasosAgendamento{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+
+}
+.pasos{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+.numeros{
+  font-size: 45px;
+}
+.textoPasos{
+  color: #1D3557;
+
+}
+input{
+  border-radius: 4px;
+}
+
+/* Formulario */
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+  color:#1D3557;
+
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 400px;
+}
+.boton{
+  width: 200px;
+  background-color: #1D3557;
+  color: white;
+
+}
+.contenedorBoton{
+  display: flex;
+  justify-content: center;
+}
+
+.contenidoAgendamiento{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  background-color: #bfe0ce ;
+  background: linear-gradient(to bottom, rgba(191, 224, 206, 1), rgba(191, 224, 206, 0));
+
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+}
+

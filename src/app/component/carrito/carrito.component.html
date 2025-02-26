@@ -1,0 +1,14 @@
+<h2>Bienvenido a tu Carrito de Compras</h2>
+
+<div class="contenedor">
+<div class="tarjeta" *ngFor="let item of cartItems">
+  <img [src]="item.img" alt="Producto" width="200px">
+  <div class="descripcion" >
+    <p><strong>Marca:</strong>  {{ item.marca }}</p>
+    <p><strong>Modelo:</strong> {{ item.modelo }}</p>
+    <p><strong>Precio:</strong> ${{ item.precio }}</p>
+<!-- <button (click)="removeFromCart(item)">Eliminar</button> -->
+  </div>
+</div>
+
+</div>
