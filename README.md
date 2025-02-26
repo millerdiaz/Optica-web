@@ -1,27 +1,25 @@
-# AngularOptica
+🏥 Óptica Web
+Optica Web es una aplicación interactiva que permite a los usuarios explorar un catálogo de productos ópticos, añadir artículos al carrito de compras y agendar citas para consultas o servicios ópticos. La aplicación está conectada a una API propia y utiliza MongoDB como base de datos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+🚀 Características principales
+✅ Explorar el catálogo de productos ópticos.
+✅ Agregar productos al carrito de compras.
+✅ Agendar citas para consultas o servicios ópticos.
+✅ Interactuar con la página de forma dinámica.
 
-## Development server
+🛠️ Tecnologías utilizadas
+El proyecto está desarrollado utilizando el stack MEAN :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+MongoDB - Base de datos NoSQL para almacenar productos, usuarios y citas.
+Express.js - Framework backend para la API.
+Angular - Framework frontend para la interfaz de usuario.
+Node.js : entorno de ejecución para el backend.
+Bootstrap - Para mejorar la experiencia visual y el diseño responsivo.
 
-## Code scaffolding
+🔌 Conexión con la API
+La aplicación se conecta a una API desarrollada en Node.js con Express
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
